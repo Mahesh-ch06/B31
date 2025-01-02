@@ -133,15 +133,6 @@ tr:hover {
   transition: background-color 0.3s ease;
 }
 
-/* Add search icon to text inputs */
-.search-icon {
-  background-image: url('search-icon.png'); /* Replace with your icon's URL */
-  background-size: 16px 16px;
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  padding-left: 35px; /* Space for the icon */
-}
-
 /* Cards Section */
 .cards-container {
   display: grid;
