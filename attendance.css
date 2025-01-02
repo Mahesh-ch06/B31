@@ -9,6 +9,7 @@
     font-family: "Inter", sans-serif;
   }
   
+  
   strong {
     font-size: 1.2rem;
     color: black;
@@ -150,23 +151,39 @@
     margin: 1rem;
   }
   
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #666666;
-  }
-  
-  .footer-link {
-    color: #0070f3;
-  }
+/* Make the body and html take up the full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ensure content takes up the available space */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the footer */
+.footer {
+  text-align: center;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+.footer-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
   
   /* media query for less than 480px */
   @media screen and (max-width: 480px) {
